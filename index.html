@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./main.css">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-[#2A2A2A] min-h-screen pt-[100px]">
+    
+    <div class="my-[70px] flex justify-center text-center">
+        <img class="block" src="./images/MOVIES!.png" alt="">
+    </div>
+
+    <form id="form" action="" class="w-[700px] bg-[#fff] p-[20px] mx-auto rounded flex justify-between">
+        <input id="input" type="text" placeholder="Enter movies" class="border-[1px] border-gray-400 rounded pl-[10px] hover:border-black transition-all">
+        <select name="" id="select" class="bg-red-300 border-none rounded hover:bg-red-400 transition-all">
+            <option value="A-Z">A-Z</option>
+            <option value="Z-A">Z-A</option>
+        </select>
+        <button class="bg-green-600 p-[10px] text-white hover:bg-green-700 transition-all rounded" type="submit">Search</button>
+    </form>
+
+    <ul id="moviesWrapper" class="flex flex-wrap gap-[20px] mt-[50px] justify-center"></ul>
+    
+    <script src="./movies.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
